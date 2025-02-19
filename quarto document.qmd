@@ -5,16 +5,27 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Pitfall trap and ground quadrat analyses
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Welcome! Today we're diving into some pitfall trap data from 2024, collected (with permits - don't worry) in the Potberg region of De Hoop, Western Cape, South Africa. I set out to investigate if there was a change in local ant communities with a change in vegetation cover from invasive eucalyptus trees, to natural fynbos.
 
-## Running Code
+Many hours were spent sorting, counting and identifying the ants in the 32 pitfall traps, leaving a sum total of 886 ants. As you can imagine, I've had enough of them...
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Let's get started.
+
+### Loading packages:
+
+for these analyses we'll use the beloved *tidyverse* package and *readxl*.
 
 ```{r}
-1 + 1
+#| label: loading packages
+## Install packages
+install.packages("tidyverse")
+install.packages("readxl")
+
+## Load Packages
+library(tidyverse)
+library(readxl)
 ```
 
 You can add options to executable code like this

@@ -31,3 +31,8 @@ pitfall_final <- bind_cols(read_excel("example data_ IP_combined_pitfallsoil_dat
 view(pitfall_final)
 
 # now we have the pitfall data with the trap numbers back in place. Let's do the same for the soil data:
+
+soil_final <- bind_cols(read_excel("example data_ IP_combined_pitfallsoil_data_clean.xlsx", range = "A1:A32"), read_excel("example data_ IP_combined_pitfallsoil_data_clean.xlsx", range = "C1:F32"))
+
+# the second column in the original pitfall data set is a bit redundant, as the site (G or F) is captured in the pitfall trap number (e.g. G2.4)
+
